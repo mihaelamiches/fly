@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MapAnnotationView" id="iN0-l3-epB" customClass="MapAnnotationView" customModule="Fly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="56" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destination" translatesAutoresizingMaskIntoConstraints="NO" id="GVz-DY-vBI">
+                    <rect key="frame" x="0.0" y="0.0" width="56" height="58"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Do-0j-Dwt" userLabel="200">
+                    <rect key="frame" x="28" y="29" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GVz-DY-vBI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Uf-aw-6uZ"/>
+                <constraint firstAttribute="trailing" secondItem="GVz-DY-vBI" secondAttribute="trailing" id="D5u-OM-Q9F"/>
+                <constraint firstItem="GVz-DY-vBI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="b0S-39-6X3"/>
+                <constraint firstItem="6Do-0j-Dwt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e7c-ek-xFv"/>
+                <constraint firstItem="6Do-0j-Dwt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kyD-2V-mni"/>
+                <constraint firstAttribute="bottom" secondItem="GVz-DY-vBI" secondAttribute="bottom" id="z9r-G2-krU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="calloutLabel" destination="6Do-0j-Dwt" id="6wL-MK-NVJ"/>
+                <outlet property="imageView" destination="GVz-DY-vBI" id="FU3-A9-UDO"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="destination" width="32" height="32"/>
+    </resources>
+</document>
